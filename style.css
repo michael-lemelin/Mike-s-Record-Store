@@ -1,0 +1,32 @@
+/* style.css */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #1e241e;
+    padding: 25px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.logo img{
+    margin: -20%;
+    margin-left: 20px;
+    width: 70px;
+    height: auto; /* Auto-adjust height to maintain aspect ratio */
+}
+
+.search-bar{
+    display: flex;
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+.search-bar input{
+    width: 500px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
