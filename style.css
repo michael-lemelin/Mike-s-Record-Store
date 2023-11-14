@@ -5,28 +5,43 @@ body{
 }
 
 header{
-    background-color: #1e241e;
-    padding: 25px;
-    justify-content: space-between;
+    background: #1e241e;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.search-form{
+    display: flex;
+    flex-grow: 1;
 }
 
 .logo img{
-    margin: -20%;
-    margin-left: 20px;
     width: 70px;
-    height: auto; /* Auto-adjust height to maintain aspect ratio */
+    margin-right: 110px;
+    margin-left: 40px
 }
 
-.search-bar{
-    display: flex;
+.search-input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     flex-grow: 1;
-    margin-left: 50px;
-    margin-right: 300px;
 }
 
-.search-bar input{
-    width: 500px;
-    margin-right: 10px;
-    flex-grow: 1;
+.search-button{
+    padding: 8px;
+    margin-right: 40%;
+    margin-left: 1px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-icon{
+    width: 20px;
 }
