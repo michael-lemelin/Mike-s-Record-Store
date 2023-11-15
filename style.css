@@ -17,8 +17,7 @@ header{
 
 .logo img{
     width: 70px;
-    margin-right: 110px;
-    margin-left: 40px
+    margin-left: 250px
 }
 
 .search-form{
@@ -33,6 +32,7 @@ header{
     border-color: #f2f2e9;
     border-radius: 5px;
     flex-grow: 1;
+    margin-left: 50px;
     outline: none;
 }
 
@@ -116,4 +116,19 @@ header{
 
 .show{
     display: block;
+}
+
+.navbar{
+    background-color: #f2f2e9;
+    margin-left: 200px;
+}
+
+.navbar a{
+    float: left;
+    color: #1e241e;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 14px;
 }
