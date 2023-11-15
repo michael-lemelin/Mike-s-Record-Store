@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f2f2e9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -32,6 +33,7 @@ header{
     border-color: #f2f2e9;
     border-radius: 5px;
     flex-grow: 1;
+    outline: none;
 }
 
 .search-button{
@@ -79,7 +81,7 @@ header{
 .dropbtn{
     background-color: transparent;
     border: none;
-    color: white;
+    color: #f2f2e9;
     padding: 10px;
     margin-right: 60px;
     font-size: 16px;
@@ -90,10 +92,12 @@ header{
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #f2f2e9;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1; /* Place dropdown in front of other elements */
+    border-radius: 5px;
+    transform: translateX(-15%); /* Move dropdown to left to center it to button properly */
 }
 
 .dropdown-content a {
@@ -107,6 +111,7 @@ header{
 
 .dropdown-content a:hover{
     background-color: #ddd;
+    border-radius: 5px;
 }
 
 .show{
