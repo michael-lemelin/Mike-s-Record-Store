@@ -73,6 +73,18 @@ header{
     background: none;
 }
 
+.spotify-button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.spotify-icon{
+    width: 40px;
+    margin-left: 670px
+}
+
 .dropdown{
     position: relative;
     display: inline-block;
