@@ -131,7 +131,7 @@ header{
 .dropdown-content::before{
     content: '';
     position: absolute;
-    top: -10px;
+    top: -9px;
     left: 50%;
     transform: translateX(-50%);
     border-width: 0 10px 10px 10px;
@@ -159,6 +159,35 @@ header{
     font-size: 14px;
 }
 
-.reneerapp-slide{
+.slide-images{
     width: 100%;
+}
+
+.slide-buttons{
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.navigation{
+    text-align: center;
+}
+
+.dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dot.active{
+    background-color: #1e241e;
 }
