@@ -1,5 +1,6 @@
 /* style.css */
-body{
+body,
+html{
     margin: 0;
     padding: 0;
     background-color: #f2f2e9;
@@ -7,6 +8,7 @@ body{
 }
 
 header{
+    margin: 0;
     background: #1e241e;
     display: flex;
     justify-content: space-between;
@@ -164,7 +166,7 @@ header{
 
 /**************** IMAGE CAROUSEL STYLING *****************/
 .slide-images{
-    width: 102%; /* 102% to account for the size of the image not being large enough */
+    width: 100%; /* 102% to account for the size of the image not being large enough */
     height: auto;
     display: block;
 }
@@ -198,4 +200,35 @@ header{
 
 .dot.active{
     background-color: #1e241e;
+}
+
+/* ON ROTATION IMAGES */
+.rotation-title{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.on-rotation{
+    display: flex;
+    width: 100%;
+    height: auto; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.album-buttons{
+    border: none;
+    width: 20%;
+    padding: 0;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.album-buttons img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
