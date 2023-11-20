@@ -15,6 +15,7 @@ header{
     color: #fff;
 }
 
+/**************** HEADER ELEMENT STYLING *****************/
 .logo img{
     width: 70px;
     margin-left: 250px
@@ -86,6 +87,7 @@ header{
     margin-left: auto;
 }
 
+/**************** DROPDOWN STYLING *****************/
 .dropdown{
     position: relative;
     display: inline-block;
@@ -143,6 +145,7 @@ header{
     display: block;
 }
 
+/**************** NAVBAR STYLING *****************/
 .navbar{
     display: flex;
     background-color: #f2f2e9;
@@ -159,8 +162,11 @@ header{
     font-size: 14px;
 }
 
+/**************** IMAGE CAROUSEL STYLING *****************/
 .slide-images{
-    width: 100%;
+    width: 102%; /* 102% to account for the size of the image not being large enough */
+    height: auto;
+    display: block;
 }
 
 .slide-buttons{
@@ -170,7 +176,9 @@ header{
 }
 
 .slides{
-    display: flex;
+    width: 100%;
+    display: block;
+    height: auto;
     transition: transform 0.5s ease-in-out;
 }
 
