@@ -206,8 +206,9 @@ header{
 .rotation-title{
     margin-top: 3%;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1e241e;
 }
 
 .on-rotation{
@@ -231,4 +232,9 @@ header{
     display: block;
     width: 100%;
     height: auto;
+    transition: transform 0.9s ease;
+}
+
+.album-buttons:hover img{
+    transform: scale(1.05);
 }
