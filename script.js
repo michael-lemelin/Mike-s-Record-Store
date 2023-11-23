@@ -16,3 +16,18 @@ window.onclick = function(e) {
         }
     }
 }
+
+// Wait for DOM content to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Get references to navbar toggle button and menu
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarNav = document.getElementById('navbar-nav');
+
+    // Add click event listener to navbar toggle button
+    navbarToggle.addEventListener('click', function() {
+
+        // Toggle 'show' class on navbar menu to display or hide it
+        navbarNav.classList.toggle('show');
+    });
+});
