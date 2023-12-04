@@ -22,12 +22,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Get references to navbar toggle button and menu
     const navbarToggle = document.getElementById('navbar-toggle');
-    const navbarNav = document.getElementById('navbar-nav');
+    const mobileNav = document.getElementById('mobile-nav');
 
     // Add click event listener to navbar toggle button
     navbarToggle.addEventListener('click', function() {
 
         // Toggle 'show' class on navbar menu to display or hide it
-        navbarNav.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    const images = document.querySelectorAll('.slide-images');
+    let currentImageIndex = 0;
+
+    function showImage(index){
+        for(let i = 0; i < images.length; i++){
+            images[i].classList.remove('active');
+        }
+        images[index].classList.add('active');
+    }
+
+    // Show initial image
+    showImage(currentImageIndex);
+
+    document.querySelector('.next-btn').addEventListener('click', function(){
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        showImage(currentImageIndex);
+    });
+
+    document.querySelector(',prev-btn').addEventListener('click', function(){
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        showImage(currentImageIndex);
     });
 });

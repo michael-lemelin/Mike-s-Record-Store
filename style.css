@@ -152,7 +152,7 @@ header{
     display: flex;
     background-color: #f2f2e9;
     align-items: left;
-    padding: 10px;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -188,6 +188,15 @@ header{
     width: 25px;
 }
 
+.mobile-nav-spotify-button{
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: auto;
+}
+
 /* Styles for small screens - dropdown menu */
 @media screen and (max-width: 900px) {
 
@@ -195,9 +204,21 @@ header{
         display: none;
     }
 
+    .spotify-icon{
+        display: none;
+    }
+
+    .mobile-nav-spotify-button{
+        display: block;
+    }
+
     #navbar-toggle{
         display: block;
         cursor: pointer;
+    }
+
+    .mobile-nav.active{
+        display: flex;
     }
 
     .navbar-nav.active {
@@ -238,42 +259,42 @@ header{
     font-size: 14px;
 }
 
+/* Navbar for mobile screens */
+.mobile-nav{
+    display: none;
+}
+
 /**************** IMAGE CAROUSEL STYLING *****************/
+.image-carousel{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .slide-images{
-    width: 100%; /* 102% to account for the size of the image not being large enough */
+    width: 100%; 
     height: auto;
+    display: none;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-images.active{
     display: block;
+    
+
 }
 
 .slide-buttons{
     border: none;
-    padding: 0;
     cursor: pointer;
-}
-
-.slides{
-    width: 100%;
-    display: block;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation{
     text-align: center;
-}
-
-.dot{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #bbb;
-    margin: 5px;
-    cursor: pointer;
-}
-
-.dot.active{
-    background-color: #1e241e;
 }
 
 /* ON ROTATION IMAGES */
