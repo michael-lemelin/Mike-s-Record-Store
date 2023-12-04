@@ -180,10 +180,28 @@ header{
     text-align: left;
 }
 
+#navbar-toggle{
+    display: none;
+}
+
+#dropdown-icon{
+    width: 25px;
+}
+
 /* Styles for small screens - dropdown menu */
 @media screen and (max-width: 900px) {
-    .navbar-nav {
+
+    .navbar-nav{
         display: none;
+    }
+
+    #navbar-toggle{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-nav.active {
+        display: flex;
         text-align: left;
         flex-direction: column;
         position: absolute;
@@ -208,16 +226,6 @@ header{
 .navbar-nav li:last-child {
     border-bottom: none;
     text-align: left;
-}
-
-.navbar-header {
-    position: relative;
-    text-align: left;
-}
-
-#navbar-toggle {
-    display: block;
-    cursor: pointer;
 }
 
 .navbar a{

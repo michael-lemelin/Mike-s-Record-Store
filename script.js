@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navbarToggle.addEventListener('click', function() {
 
         // Toggle 'show' class on navbar menu to display or hide it
-        navbarNav.classList.toggle('show');
+        navbarNav.classList.toggle('active');
     });
 });
